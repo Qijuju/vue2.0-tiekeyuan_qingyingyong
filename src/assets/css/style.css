@@ -1,0 +1,121 @@
+/* 重写的样式表 */
+/* 栅格 */
+.van-col{
+  text-align: center;
+  padding:3px 0;
+}
+
+.van-tab{
+  background-color: transparent;
+
+}
+.van-tab:nth-child(3){
+  border-left:1px solid #ccc;
+  border-right:1px solid #ccc;
+}
+
+.van-tab--active{
+  background-color: #ccc;
+  color: #333;
+}
+.van-tabs__nav-bar{
+  height:0;
+  transform:none;
+}
+.van-tabs__nav--line{
+  background-color: #E5F2FA;
+}
+
+/* 导航 */
+.van-nav-bar{
+  z-index: 9999 !important;
+  background-color: #0087e8;
+}
+.van-nav-bar__text{
+  font-size: 16px;
+  color: #fff;
+}
+/*title*/
+.van-nav-bar__title{
+  color: #fff;
+  width:65%;
+  margin:auto;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+
+}
+
+/* 下拉可选项 */
+.van-picker__toolbar{
+  background: #E5F2FA;;
+}
+
+/* footer */
+.mint-tabbar.is-fixed{
+  border-top:1px solid #ccc;
+}
+
+/*  下拉刷新 */
+._v-container>._v-content>.pull-to-refresh-layer{
+  margin-top:35px !important;
+}
+._v-container>._v-content>.loading-layer{
+  left:0px;
+  bottom:66px;
+}
+._v-container{
+  z-index:1 !important;
+}
+._v-container>._v-content>.loading-layer>.no-data-text.active{
+  font-size:12px;
+}
+
+/*._v-container>._v-content{*/
+/*margin-bottom:90px !important;*/
+/*}*/
+
+/*标段详情下的按钮的样式 start */
+
+.switch .van-switch .van-switch__node{
+  width:18px !important;
+  height:18px !important;
+}
+/* iPhone 5*/
+@media only screen and (max-device-width :480px){
+  .switch .van-switch--on .van-switch__node{
+    transform:translateX(6px);
+  }
+}
+/* iPhone 6*/
+@media (min-device-width : 375px) and (max-device-width : 667px) and (-webkit-min-device-pixel-ratio : 2){
+  .switch .van-switch--on .van-switch__node{
+    transform:translateX(9px);
+  }
+}
+
+/*6+*/
+@media (min-device-width : 414px) and (max-device-width : 736px) and (-webkit-min-device-pixel-ratio : 3){
+  .switch .van-switch--on .van-switch__node{
+    transform:translateX(13px);
+  }
+}
+/*标段详情下的按钮的样式 end */
+
+/*统计详情页表格表头*/
+.el-table th{
+  text-align: center;
+  /*background-color: rgb(229, 242, 250);*/
+}
+tbody .el-table__row .el-table_1_column_1 {
+  font-weight: 600;
+  color: #909399;
+}
+
+
+/*修改tab的层级*/
+.mint-tabbar.is-fixed {
+  z-index: 3;
+}
+
+
